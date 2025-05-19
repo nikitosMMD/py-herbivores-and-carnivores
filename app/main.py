@@ -34,5 +34,5 @@ class Carnivore(Animal):
         victum.health -= 50
         if victum.health <= 0:
             victum.health = 0
-        if victum in Animal.alive:
-            Animal.alive.remove(victum)
+            if victum in Animal.alive:
+                Animal.alive.remove(victum)
